@@ -8,34 +8,46 @@ body, html{
     margin:0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   h1 {
+    text-align: right;
+    padding-right: 30%;
     color: #4B4B4B; /* Eel */
     font-size: large;
   }
 
   h2 {
+    text-align: right;
+    padding-right: 20%;
     color: #4B4B4B; /* Eel */
     font-size: medium;
   }
 
-  .header {
-    order: 1;
+  h3 {
+    color: #4B4B4B; /* Eel */
+    font-size: medium;
   }
 
-  .work {
-    order: 2;
-    z-index: 1;
+  a {
+    padding-left: 3%;
+    color: #4B4B4B; /* Eel */
+    font-size: medium;
   }
 
-  .wrapper{
-    order: 3;
+  .avatar{
     display: table-cell;
     vertical-align: top;
     position: relative;
+    height: 400px;
+    padding: 5%;
   }
+
+  .work {
+    padding: 5%;
+  }
+
   .background-circle{
     width: 400px;
     height: 400px;
@@ -256,6 +268,7 @@ body, html{
     color: white;
     position: relative;
     top: -300px;
+    left: 150px;
     font-size: 50px;
     display: inline-block;
     -webkit-text-stroke: 2px;
