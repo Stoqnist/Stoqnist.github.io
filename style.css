@@ -37,7 +37,15 @@ body, html{
     vertical-align: top;
     position: relative;
     height: 250px;
-    padding: 5%;
+    padding: 10%;
+  }
+
+  .header{
+    padding-left: 7%;
+  }
+
+  .work {
+    padding-left: 3%;
   }
 
   .background-circle{
@@ -104,7 +112,7 @@ body, html{
     width: 196px;
     height: 260px;
     border-radius: 100px;
-    background: #FFE4BE;
+    background: /* Cheetah */ #FFCE8E;
     position: relative;
   }
   
@@ -112,7 +120,7 @@ body, html{
     width: 180px;
     height: 0px;
     border-radius: 48px 48px 0 0;
-    background: #FFE4BE;
+    background: /* Cheetah */ #FFCE8E;
     position: absolute;
     top: 40px;
     left: 8px;
@@ -126,23 +134,18 @@ body, html{
     width: 20px;
     height: 45px;
     opacity: 1;
-    background: #FFE4BE;
+    background:  #000/* #e5a259 Monkey */;
     border-top-left-radius: 20px;
-    position: absolute;
     left: 50%;
     top: 80px;
     margin-left:-20px;
-    animation:shadow-anim 0.7s 3s 1 ease;
-    animation-fill-mode: forwards;
-    -webkit-animation:shadow-anim 0.7s 3s 1 ease;
-    -webkit-animation-fill-mode: forwards;
     opacity: 0;
-    z-index: 5;
+    z-index: 100;
   }
   .ear{
     width: 24px;
     height: 35px;
-    background: #FFE4BE;
+    background: /* Cheetah */ #FFCE8E;
     border-radius: 12px;
     position: absolute;
     top: 116px;
@@ -224,7 +227,7 @@ body, html{
     width: 20px;
     height: 28px;
     border-radius: 10px;
-    background: #334C68;
+    background: #b66e28; /* Beak Inner */
     position: absolute;
     top: -18px;
     left: 50%;
