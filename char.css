@@ -1,7 +1,3 @@
-body{
-    background-color: #ddf4ff; /* Iguana */
-}
-
 body, html{
     width:100%;
     height:100%;
@@ -9,10 +5,7 @@ body, html{
     display: table;
     text-align: center;
   }
-
-  h1 {
-    color: #4B4B4B; /* Eel */
-  }
+  
   .wrapper{
     display: table-cell;
     vertical-align: middle;
@@ -81,7 +74,7 @@ body, html{
   .head{
     width: 196px;
     height: 260px;
-    border-radius: 100px;
+    border-radius: 50px;
     background: #FFE4BE;
     position: absolute;
     top: 50%;
@@ -100,6 +93,80 @@ body, html{
     transform:scale(0) translateZ(0);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+  }
+  
+  .hair-main{
+    width:220px;
+    height: 0px;
+    background: #E7AB57;
+    border-radius: 54px 54px 0px 0px;
+    margin-left: -12px;
+    margin-top: -10px;
+    animation:hair-anim 0.7s 0.9s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation:hair-anim 0.7s 0.9s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hair-top{
+    width: 128px;
+    height: 70px;
+    opacity: 0;
+    border-top-right-radius: 30px;
+    background: #E7AB57;
+    position: relative;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-64px);
+    -webkit-transform: translateX(-64px);
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    animation:hair-top-anim 0.7s 1s 1 ease;
+    -webkit-animation:hair-top-anim 0.7s 1s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  .hair-bottom{
+    width: 54px;
+    height: 50px;
+    opacity: 0;
+    border-bottom-left-radius: 25px;
+    background: #E7AB57;
+    position: relative;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-27px);
+    -webkit-transform: translateX(-27px);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    animation:hair-bottom-anim 0.7s 1.4s 1 ease;
+    -webkit-animation:hair-bottom-anim 0.7s 1.4s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+    
+  .sideburn{
+    width: 8px;
+    height: 25px;
+    background: #E7AB57;
+    position: absolute;
+    bottom: -25px;
+    opacity: 0;
+    animation:sideburn-anim 0.7s 0.9s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation:sideburn-anim 0.7s 0.9s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  .sideburn#left{
+    left: 12px;
+  }
+  
+  .sideburn#right{
+    right: 12px;
   }
   
   .face{
@@ -193,8 +260,7 @@ body, html{
   .eyebrow{
     width: 40px;
     height: 10px;
-    background: #A56644; /* Grizzly */
-    
+    background: #E7AB57;
     position: absolute;
     top: -35px;
     left: 50%;
@@ -233,6 +299,81 @@ body, html{
     transform-origin: bottom;
   
   }
+  .shadow-wrapper{
+    width: 98px;
+    height: 260px;
+    position: absolute;
+    left: -8px;
+    bottom: -84px;
+    z-index: 4;
+    overflow: hidden;
+  }
+  .shadow{
+    width: 98px;
+    height: 260px;
+    border-radius: 50px;
+    background: rgba(149,36,0,0.1);
+    position: absolute;
+    z-index: 4;
+    opacity: 0;
+    animation:shadow-anim 1s 2.8s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation:shadow-anim 1s 2.8s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .triangle-light{
+    width: 400px;
+    height: 600px;
+    background: #FFFFFF;
+    opacity: 0.2;
+    position: absolute;
+    right: -65%;
+    animation: triangle-light-anim 1s 2.8s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation: triangle-light-anim 1s 2.8s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translate(200px,0px);
+    transform: translate(200px,0px);
+  }
+  .triangle-dark{
+    width: 400px;
+    height: 600px;
+    background: #000000;
+    opacity: 0.2;
+    position: absolute;
+    left: -60%;
+    top: 30%;
+    animation: triangle-dark-anim 1s 3s 1 ease;
+    animation-fill-mode: forwards;
+    -webkit-animation: triangle-dark-anim 1s 3s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translate(-200px,0px);
+    transform: translate(-200px,0px);
+  }
+  .music-note{
+    position: absolute;
+    font-size: 150px;
+    color: #FCB040;
+    width: 1px;
+    left: 50%;
+    opacity: 0;
+  }
+  .music-note#one{
+    margin-left: -250px;
+    top: 50%;
+    animation: note-anim 2s 3.5s infinite ease;
+    animation-fill-mode: forwards;
+    -webkit-animation: note-anim 2s 3.5s infinite ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .music-note#two{
+    margin-left: 150px;
+    top: 30%;
+    animation: note-anim 2s 4.3s infinite ease;
+    animation-fill-mode: forwards;
+    -webkit-animation: note-anim 2s 4.3s infinite ease;
+    -webkit-animation-fill-mode: forwards;
+  }
   .shirt-text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -252,6 +393,7 @@ body, html{
     -webkit-animation: text-anim 0.7s 3s 1 ease;
   }
   .shirt-text:nth-of-type(2){
+    color: #EF4136;
     animation: text-anim 0.7s 3.1s 1 ease;
     -webkit-animation: text-anim 0.7s 3.1s 1 ease;
   }
@@ -266,21 +408,6 @@ body, html{
   .shirt-text:nth-of-type(5){
     animation: text-anim 0.7s 3.4s 1 ease;
     -webkit-animation: text-anim 0.7s 3.4s 1 ease;
-  }
-
-  .subtitle-text{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    position: relative;
-    top: -300px;
-    font-size: 50px;
-    display: inline-block;
-    -webkit-text-stroke: 2px;
-    -webkit-transform: translate(0px,100px);
-    transform: translate(0px,100px);
-    animation-fill-mode: forwards !important;
-    -webkit-animation-fill-mode: forwards !important;
   }
     
   @keyframes grow
@@ -659,6 +786,53 @@ body, html{
   }
   }
   
+  @keyframes border-pulse
+  {
+  0% {
+    -webkit-transform: scale(0) translateZ(0);
+    transform: scale(0) translateZ(0);
+    border-width: 20px;
+  }
+  40% {
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+    border-width: 20px;
+    margin-left: -220px;
+    margin-top: -220px;
+  }
+  100% {
+    -webkit-transform: scale(1.5) translateZ(0);
+    transform: scale(1.5) translateZ(0);
+    border-width: 0px;
+    border-style: double;
+    margin-left: -200px;
+    margin-top: -200px;
+  }
+  }
+  
+  @-webkit-keyframes border-pulse /* Safari and Chrome */
+  {
+  0% {
+    -webkit-transform: scale(0) translateZ(0);
+    transform: scale(0) translateZ(0);
+    border-width: 20px;
+  }
+  40% {
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+    border-width: 20px;
+    margin-left: -220px;
+    margin-top: -220px;
+  }
+  100% {
+    -webkit-transform: scale(1.5) translateZ(0);
+    transform: scale(1.5) translateZ(0);
+    border-width: 0px;
+    border-style: double;
+    margin-left: -200px;
+    margin-top: -200px;
+  }
+  }
   @keyframes shadow-anim
   {
   0% {
@@ -713,6 +887,17 @@ body, html{
   100% {
     -webkit-transform: rotate(45deg) translate(0px,0px) translateZ(0);
     transform: rotate(45deg) translate(0px,0px) translateZ(0);
+  }
+  }
+  @keyframes triangle-dark-anim
+  {
+  0% {
+    -webkit-transform: translate(-200px,0px) translateZ(0);
+    transform: translate(-200px,0px) translateZ(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(0px,0px) translateZ(0);
+    transform: rotate(-45deg) translate(0px,0px) translateZ(0);
   }
   }
   
