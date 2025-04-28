@@ -130,18 +130,6 @@ body, html{
     -webkit-animation-fill-mode: forwards;
     z-index: 3;
   }
-  .nose{
-    width: 20px;
-    height: 45px;
-    opacity: 1;
-    background:  #000/* #e5a259 Monkey */;
-    border-top-left-radius: 20px;
-    left: 50%;
-    top: 80px;
-    margin-left:-20px;
-    opacity: 0;
-    z-index: 100;
-  }
   .ear{
     width: 24px;
     height: 35px;

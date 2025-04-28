@@ -1,0 +1,25 @@
+/* Animation for the character */
+.animated-character {
+    animation: bounceIn 1s ease forwards; /* Adding bounce-in animation */
+}
+
+/* Keyframes for the bounce-in effect */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(30px); /* Start lower */
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        opacity: 1; /* Become visible */
+        transform: translateY(-10px); /* Move up slightly */
+    }
+    100% {
+        transform: translateY(0); /* Land back to original position */
+    }
+}
+
+/* Align the character beside the text */
+.character-container {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
