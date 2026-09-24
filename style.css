@@ -32,6 +32,14 @@ body, html{
     font-size: medium;
   }
 
+  .leftside {
+    float:left;
+  }
+
+  .rightside {
+    float:right;
+  }
+
   .avatar{
     display: table-cell;
     vertical-align: top;
@@ -57,9 +65,6 @@ body, html{
     background: #95B3BF;
     position: relative;
     -webkit-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
-    -moz-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
-    -o-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
-    -ms-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
     animation:grow 0.7s 1 ease;
     -webkit-animation:grow 0.7s 1 ease;
     transform-origin: center;
@@ -118,7 +123,7 @@ body, html{
   
   .face{
     width: 180px;
-    height: 0px;
+    height: 0;
     border-radius: 48px 48px 0 0;
     background: /* Cheetah */ #FFCE8E;
     position: absolute;
@@ -160,10 +165,10 @@ body, html{
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-  .ear#left{
+  .ear#ear-left{
     left: -12px;
   }
-  .ear#right{
+  .ear#ear-right{
     right: -12px;
   }
   .eye-shadow{
@@ -180,11 +185,11 @@ body, html{
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-  .eye-shadow#left{
+  .eye-shadow#eye-shadow-left{
     left: 35px;
     z-index: 5;
   }
-  .eye-shadow#right{
+  .eye-shadow#eye-shadow-right{
     right: 35px;
   }
   .eyebrow{

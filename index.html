@@ -1,41 +1,49 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stoqnist</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="avatar">
-            <div class="head">
-                <div class="ear" id="left"></div>
-                <div class="ear" id="right"></div>
-                <div class="face">
-                  <div class="eye-shadow" id="left">
-                    <div class="eyebrow"></div>
-                    <div class="eye"></div>
-                  </div>
-                  <div class="eye-shadow" id="right">
-                    <div class="eyebrow"></div>
-                    <div class="eye"></div>
-                  </div>
-                  <div class="mouth"></div>
-                </div>
-              </div>
-              <span class="shirt-text">H </span>
-              <span class="shirt-text">i</span>
-              <span class="shirt-text">!</span>
-              <span class="shirt-text"> </span>
-              <span class="shirt-text">👋</span>
-          </section>
-          <section class="header">
-            <h1>Stoqnist</h1>
-            <h2><i>Software Engeneer</i></h2>
+        <section class="leftside">
+            <label for="story">Reader input</label><textarea id="story" name="story" rows="5" cols="33">
+                It was a dark and stormy night...
+            </textarea>
         </section>
-        <section class="work">
-            <h3>My work 💼</h3>
-            <a href="./rbac/index.html">Users, roles, applications</a>
-        </section>    
+        <section class="rightside">
+            <section class="avatar">
+                <div class="head">
+                    <div class="ear" id="ear-left"></div>
+                    <div class="ear" id="ear-right"></div>
+                    <div class="face">
+                        <div class="eye-shadow" id="eye-shadow-left">
+                            <div class="eyebrow"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="eye-shadow" id="eye-shadow-right">
+                            <div class="eyebrow"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <span class="shirt-text">H </span>
+                <span class="shirt-text">i</span>
+                <span class="shirt-text">!</span>
+                <span class="shirt-text"> </span>
+                <span class="shirt-text">👋</span>
+            </section>
+            <section class="header">
+                <h1>Stoqnist</h1>
+                <h2><i>Software Engeneer</i></h2>
+            </section>
+            <section class="work">
+                <h3>My work 💼</h3>
+                <a href="./rbac/index.html">Users, roles, applications</a>
+            </section>
+        </section>
     </body>
 </html>
