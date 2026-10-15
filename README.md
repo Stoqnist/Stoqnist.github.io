@@ -44,3 +44,7 @@ Verification requires Google's actual account-specific token; do not commit a pl
 - LinkedIn: add `https://stoqnist.github.io/` as a website in Contact info and/or a Featured link titled “Stoyan — Backend & Cloud Engineer CV”.
 
 Official references: [Google ownership verification](https://support.google.com/webmasters/answer/9008080?hl=en), [URL inspection](https://support.google.com/webmasters/answer/9012289?hl=en), [OpenAI crawlers](https://developers.openai.com/api/docs/bots).
+
+## SEO operations
+
+See [SEO-PLAN.md](SEO-PLAN.md) for the prioritized follow-up, validation evidence and account-owner actions. Keep structured data and social metadata consistent with the visible CV when editing. The unrelated text-reader utility is intentionally marked `noindex, follow` and remains crawlable so engines can read that directive.
