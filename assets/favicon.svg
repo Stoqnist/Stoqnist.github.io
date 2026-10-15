@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <title>Stoyan</title>
-  <rect width="64" height="64" rx="14" fill="#193d38"/>
-  <path d="M45 19C41 15 36 14 31 14C22 14 17 19 17 25C17 32 24 34 31 36C37 38 40 39 40 43C40 47 36 49 31 49C25 49 20 46 17 43" fill="none" stroke="#fffefb" stroke-width="7" stroke-linecap="round"/>
+  <rect width="64" height="64" rx="12" fill="#193d38"/>
+  <path d="M46 16H18V36H38V42H18V50H46V28H26V24H46Z" fill="#fffefb"/>
 </svg>
