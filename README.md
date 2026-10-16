@@ -1,4 +1,4 @@
-# Stoyan — CV website
+# Stoyan Georgiev — CV website
 
 A lightweight, English-language CV for applications in the Netherlands. Static HTML and CSS, ready for GitHub Pages; no build step, dependencies, analytics or external fonts.
 
@@ -14,7 +14,7 @@ Live CV: [https://stoqnist.github.io/](https://stoqnist.github.io/)
 
 Derived from the career record reviewed on 15 October 2026. Publish only professional CV content here; do not commit the private source record. ScavaSoft is the employer; Docebo projects and StoryShell are responsibilities within that employment. The licensing platform reached beta; StoryShell experiments were not production ML work.
 
-Before using this as an application CV, confirm and add the preferred full professional name and contact email, plus a LinkedIn URL if desired. The supplied source does not provide verified current contact details. No placeholders or guessed details are shown to visitors. Review dates and current-employment status when updating.
+On 16 October 2026 the owner confirmed the public professional name Stoyan Georgiev, email stoqnist@gmail.com and LinkedIn URL https://www.linkedin.com/in/stoyan-georgiev-georgiev/. These are published in the CV and matching metadata. Review dates and current-employment status when updating.
 
 ## Preview and print
 
