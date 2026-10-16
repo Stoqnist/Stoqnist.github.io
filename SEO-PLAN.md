@@ -13,21 +13,27 @@ Reviewed: 16 October 2026. Goal: make the professional CV crawlable, identifiabl
 | 2 | Keep unrelated utility out of CV search results | reader.html marked noindex, follow; omitted from sitemap. Do not disallow it in robots.txt: crawlers must fetch it to see noindex. |
 | 3 | Add external discovery paths | DONE: repository README link deployed. Screenshots on 16 October confirm CV website links on both GitHub profile and LinkedIn Contact info. |
 | 3 | Strengthen professional identity/content | DONE: owner explicitly approved Stoyan Georgiev, stoqnist@gmail.com and https://www.linkedin.com/in/stoyan-georgiev-georgiev/ on 16 October. Published in visible CV and matching search/social metadata and Person JSON-LD. |
-| 4 | Validate rendered experience and real performance | Responsive CSS, viewport, system fonts, no dependencies/analytics/external fonts. Performance measurement remains OPEN: PageSpeed API attempt on 16 October returned HTTP 429 RESOURCE_EXHAUSTED (service quota). No score was produced. Run https://pagespeed.web.dev/ with the live homepage using the web UI. No field Core Web Vitals data is available. |
+| 4 | Validate rendered experience and real performance | Responsive CSS, viewport, system fonts, no dependencies/analytics/external fonts. Mobile PageSpeed audit confirmed by screenshot on 16 October, report time 14:56:41: Performance 100, Accessibility 100, Best Practices 100, SEO 100; agentic browsing 2/2. These are automated lab results, not proof of perfect accessibility or search rankings. No real-user data is available. Desktop report and full mobile/print visual review remain unverified. |
 | 4 | Measure results | After indexing, review Search Console Pages, queries, impressions and clicks after 7–14 days; compare after 28 days. Low traffic may leave reports empty. No scheduled monitoring has been created. |
-| 5 | Additional discovery channels | Bing site setup and sitemap reading confirmed on 16 October: Success, one URL discovered, zero sitemap errors/warnings. Homepage inspection: Discovered but not crawled; request indexing and Live URL check still unconfirmed. |
+| 5 | Additional discovery channels | Bing site setup and sitemap reading confirmed on 16 October: Success, one URL discovered, zero sitemap errors/warnings. DONE: screenshot at 14:55 confirms Indexing requested and successful URL submission. Live URL at 14:56: URL can be indexed by Bing, no SEO/GEO issues found, JSON-LD and OpenGraph detected. Actual indexing remains pending; prior index status was Discovered but not crawled. |
 
 ## Remaining execution sequence
 
-1. Bing: sitemap reading is complete. Homepage inspection showed Discovered but not crawled. After the identity update deploys, request Bing indexing once if not already done, and inspect Live URL. A request is not proof of indexing.
-2. Performance audit: open https://pagespeed.web.dev/, analyze `https://stoqnist.github.io/`, and review mobile and desktop results. The API was quota-blocked, so do not claim a performance score. Fix measured issues and verify the result.
+1. Bing setup and live validation COMPLETE: sitemap read successfully, indexing request accepted, Live URL eligible, no SEO/GEO issues detected. Wait for actual indexing; do not repeatedly submit.
+2. Mobile automated audit COMPLETE with four 100/100 category scores. Review the Desktop tab and visually inspect mobile/desktop/print layout. No corrective change is justified by the supplied mobile category scores alone.
 3. Professional identity: COMPLETE. Owner-confirmed name, email and LinkedIn are published. Do not add incidental phone/birthday data.
 4. Processing follow-up: on or after 19 October check Google homepage index status and sitemap read status. Do not repeat ownership verification, the successful live test, completed profile links or the indexing request without a new reason. This is a suggested review date, not an automation.
 5. Results: review queries, impressions and clicks after 7–14 days; compare after 28 days. Actual indexing and traffic are outcomes to verify, not completed setup steps.
 
 ## Completion criteria
 
-Technical deployment and external profile links are complete. Google live eligibility and structured-data validation are complete. Professional identity and Bing sitemap setup are complete. Remaining checks: Bing live URL/indexing request and measured performance. Google processing and later search measurement remain pending. The plan must not be described as fully complete until these distinctions are resolved.
+Technical deployment and external profile links are complete. Google live eligibility and structured-data validation are complete. Professional identity and Bing sitemap setup are complete. Bing live URL/indexing request and mobile measured performance are complete. Remaining validation: desktop report, full rendered/print review, and a readable result of the new Google Rich Results Test. Google processing and later search measurement remain pending. The plan must not be described as fully complete until these distinctions are resolved.
+
+## Evidence from 16 October, 14:55–14:57
+
+- Owner screenshots confirm Bing indexing request accepted and successful live eligibility test.
+- Mobile PageSpeed report: https://pagespeed.web.dev/analysis/https-stoqnist-github-io/9s4fblwujg?form_factor=mobile — four 100 scores visible in screenshot; detailed metrics and desktop results not yet inspected.
+- New Google Rich Results Test link supplied: https://search.google.com/test/rich-results/result?id=Xzb6KoqGL5ea-MMNaDQvkQ — web retrieval failed; no result screenshot supplied, so this new test is not yet confirmed. Earlier Google ProfilePage validation remains confirmed.
 
 ## Maintenance
 
