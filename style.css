@@ -5,3 +5,11 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @page{size:A4;margin:13mm}
 @media print{body{background:white;color:#111;font-size:10pt;line-height:1.4}.site-header,.site-footer,.skip{display:none}.paper{max-width:none;margin:0;border-top:3px solid #193d38;box-shadow:none;background:white}.intro{padding:14px 0 16px}.eyebrow{font-size:8px}h1{font-size:48px;margin:14px 0 5px;letter-spacing:-2px}.headline{font-size:20px}.specialism{font-size:11px;margin:6px 0 12px}.intro-bottom{font-size:9px}.cv-grid{grid-template-columns:minmax(0,1fr) 170px;gap:24px;padding:22px 0 12px}.sidebar{padding-left:18px;font-size:9px}.sidebar h3{font-size:10px;margin-top:12px}.sidebar section{margin-bottom:20px}.profile p,.job{font-size:10px}.main-column section+section{margin-top:20px}h2{font-size:9px;padding-bottom:7px;margin-bottom:12px}h3{font-size:13px}h4{font-size:11px}.employer{font-size:10px}.date{font-size:9px}.job-top{display:block}.project{margin-top:15px;padding-left:10px}.project-label{font-size:7px}li{margin:4px 0}.compact{padding-bottom:12px;margin-bottom:15px}.cv-footer{margin:0;padding:12px 0;font-size:8px}a{text-decoration:none}.project,.compact,.sidebar section{break-inside:avoid}h2,h3,h4{break-after:avoid}p{orphans:3;widows:3}}
+
+/* Brand signature sits outside the printable CV and uses responsive, resolution-independent SVG artwork. */
+.brand-banner{max-width:1072px;margin:22px auto 0;overflow:hidden;border-radius:12px;box-shadow:0 15px 38px #193d3820}
+.brand-banner picture,.brand-banner img{display:block;width:100%}
+.brand-banner img{height:auto}
+@media(max-width:800px){.brand-banner{margin:18px 16px 0}}
+@media(max-width:600px){.brand-banner{margin:14px 10px 0;border-radius:10px}}
+@media print{.brand-banner{display:none!important}}
