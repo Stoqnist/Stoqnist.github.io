@@ -26,3 +26,6 @@
   .paper{margin-left:24px;margin-right:auto}
   .brand-banner{margin-left:24px;margin-right:auto}
 }
+
+.brand-link{display:block}
+.brand-link:focus-visible{outline:3px solid #f4b3a7;outline-offset:-6px}
